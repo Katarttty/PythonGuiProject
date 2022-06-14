@@ -60,7 +60,7 @@ layout = [[field],
             sg.Text(Score, key='_SCORE_',font='Young 50')
            ],
           [
-            sg.Text('Highest Score', key='_HIGHTSCORE_',font='Young 50')
+            sg.Text('Highest Score', key='_HIGHTSCORE_',font='Young 20')
           ],
           [
             sg.Text(highscore_list_player[0], key='_HIGHTSCORE_',font='Young 20'),
