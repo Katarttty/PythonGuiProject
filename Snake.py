@@ -2,9 +2,7 @@ import json
 
 import PySimpleGUI as sg
 from time import time
-from random import  randint
-
-
+from random import randint
 
 filename = 'score.json'
 
@@ -16,6 +14,7 @@ def convert_pos_to_Pixel(cell):
     tl = cell[0] * CELL_SIZE, cell[1] * CELL_SIZE
     br = tl[0] + CELL_SIZE, tl[1] + CELL_SIZE
     return tl, br
+
 
 def polace_apple():
     apple_pos = randint(0, CELL_NUM - 1), randint(0, CELL_NUM - 1)
@@ -60,7 +59,7 @@ layout = [[field],
             sg.Text(Score, key='_SCORE_',font='Young 50')
            ],
           [
-            sg.Text('Highest Score', key='_HIGHTSCORE_',font='Young 20')
+            sg.Text('Highest Score', key='_HIGHTSCORE_',font='Young 50')
           ],
           [
             sg.Text(highscore_list_player[0], key='_HIGHTSCORE_',font='Young 20'),
